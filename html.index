@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAUL'S POETRY - Kyotera Poet</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050505;color:#fff;font-family:system-ui,sans-serif}
+header{background:#0f0f0f;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99;border-bottom:1px solid #222}
+.logo{font-weight:900;font-size:18px}.logo span{color:#f5c518}
+.wa{background:#f5c518;color:#000;padding:10px 20px;border-radius:30px;text-decoration:none;font-weight:900}
+.hero{padding:14px 12px}
+.clock{background:linear-gradient(135deg,#111,#1c1c1c);border:1px solid #f5c518;border-radius:18px;padding:16px;display:flex;justify-content:space-between;margin-bottom:14px}
+.clock .t{font-size:28px;font-weight:900;color:#f5c518}.clock .d{font-size:11px;color:#aaa}
+.about{background:#101010;border:2px solid #f5c518;border-radius:24px;padding:26px 18px;text-align:center}
+.about img{width:125px;height:125px;border-radius:50%;border:4px solid #f5c518;object-fit:cover}
+.about h1{color:#f5c518;margin-top:10px;font-size:22px}.badge{background:#f5c518;color:#000;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:900;display:inline-block;margin:8px 0}
+.about p{color:#ccc;font-size:14px;text-align:left;margin-top:12px;white-space:pre-line;line-height:1.7}
+.btns{margin-top:16px;display:flex;gap:10px;justify-content:center}
+.btns a{padding:11px 20px;border-radius:30px;text-decoration:none;font-weight:800;font-size:14px}
+.btns .gold{background:#f5c518;color:#000}.btns .dark{background:#222;color:#fff;border:1px solid #333}
+.section{padding:20px 14px 8px;font-size:20px;font-weight:900}
+.card{background:#121212;border:1px solid #222;border-radius:18px;padding:18px;margin:12px}
+.card h3{color:#f5c518;font-size:14px;margin-bottom:8px}
+.card p{color:#ddd;font-size:14px;white-space:pre-line;line-height:1.7}
+.card p.cut{max-height:78px;overflow:hidden;position:relative}
+.card p.cut::after{content:"";position:absolute;bottom:0;left:0;right:0;height:36px;background:linear-gradient(transparent,#121212)}
+.read{margin-top:10px;background:none;border:1px solid #444;color:#f5c518;padding:7px 14px;border-radius:20px;font-weight:700}
+.actions{margin-top:12px;border-top:1px solid #222;padding-top:10px;display:flex;gap:8px}
+.actions button{background:#1e1e1e;border:1px solid #2a2a2a;color:#fff;padding:7px 12px;border-radius:20px;font-size:12px}
+footer{text-align:center;padding:24px;color:#555;font-size:11px;border-top:1px solid #111;margin-top:20px}
+</style>
+</head>
+<body>
+<header><div class="logo"><span>PAUL'S</span> POETRY</div><a class="wa" href="https://wa.me/256709478798">WhatsApp</a></header>
+<div class="hero">
+<div class="clock"><div><div class="t" id="clock">00:00:00</div><div class="d" id="date">Loading...</div></div><div style="text-align:right"><div style="font-size:11px;color:#0f0;font-weight:800">● LIVE</div><div style="font-size:11px;color:#888;margin-top:4px">📍 Kyotera, UG</div><div id="sec" style="color:#f5c518;font-weight:800;font-size:11px">--</div></div></div>
+<div class="about">
+<img src="paul.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300'">
+<h1>PAUL KAGANDA</h1>
+<div class="badge">20 YEARS • KYOTERA POET</div>
+<p>I am Paul Kaganda, 20 years, Kyotera Uganda. I write about love in small things - coffee, shirts, keys, ugly rice.
+
+Reading "The Fault in Our Stars" in my village field taught me to write from heart.
+
+This website is my heart, live from Kyotera.</p>
+<div class="btns"><a class="gold" href="https://wa.me/256709478798">Chat Me</a><a class="dark" href="#poems">Read Poems</a></div>
+</div>
+</div>
+<div id="poems"><div class="section">My Poems 🔥 10 poems</div></div>
+<footer>© 2026 PAUL'S POETRY • Kyotera • <span id="ft"></span></footer>
+<script>
+const poems=[
+["THE COFFEE WE SHARE","I wake before the kettle sings your name,\nThe kitchen cold without your sleepy light,\nI measure two spoons just the same,\nOne strong for you, one soft and light,\nAnd wait to hear your morning feet.\n\nYou shuffle in, your hair a tangled crown,\nYour hoodie falling off one sleepy shoulder,\nYou steal my mug and never put it down,\nYou say I'm cold but pull me closer,\nAnd suddenly the day is warmer."],
+["HOW YOU FOLD MY SHIRTS","You fold my shirts like you mean it,\nNot perfect, but with care in each crease,\nSleeves tucked in, buttons hiding,\nAs if you're telling them peace,\nStay here, he will be back."],
+["YOUR KEYS ON MY TABLE","Your keys land loud on my table,\nA jingle that means you are home,\nNo knock, no text, no fable,\nJust metal music, you have roamed,\nBack to where you belong."],
+["GROCERY LIST LOVE","We write our grocery list on the back of bills,\nYour handwriting big, mine cramped and small,\nMilk, bread, eggs, and your little frills,\nChocolate that you say is for us all,\nBut I know you buy it for me."],
+["WE COOK UGLY RICE","We cook rice that always sticks a bit,\nYou say it's my heat, I say it's your pot,\nWe both are right, we both admit,\nThat perfect rice we have not,\nBut perfect evenings we have."],
+["THE DISHES AT MIDNIGHT","We do dishes at midnight again,\nBecause we procrastinated all day,\nPlates stacked like our maybe and when,\nSoaked in water turning grey,\nWaiting for us to face them."],
+["NIGHT BUS YOUR HEAD ON MY SHOULDER","The night bus smells of diesel and day-old sweat,\nWe take it because taxi is too dear,\nYour head finds my shoulder, heavy, yet,\nLight as permission to be near,\nIn public, unashamed."],
+["YOUR UMBRELLA IS TOO SMALL","Your umbrella is too small for two,\nWe walk like crabs, shoulder to shoulder,\nYou tilt it to my side, I tilt to you,\nWe both get wet, just colder,\nBut never let go to stay dry."],
+["HOW YOU STEAL MY HOODIE","You steal my hoodie every cold morning,\nNot asking, just wearing it like it's yours,\nYou say it smells better in your adorning,\nThan in my closet behind closed doors,\nAnd you are right, it does."],
+["THE WAY YOU CHARGE MY PHONE","My phone dies always at eleven percent,\nYou roll your eyes and plug it in,\nYou say I live too loud, too spent,\nAnd never let the low light win,\nYou charge my chaos with your calm."]
+];
+let h="";poems.forEach((p,i)=>{let long=p[1].length>150;h+=`<div class="card"><h3>${p[0]}</h3><p id="t${i}" class="${long?'cut':''}">${p[1]}</p>${long?`<button class="read" onclick="let e=document.getElementById('t${i}');e.classList.toggle('cut');this.innerText=e.classList.contains('cut')?'Read full poem →':'Show less ↑'">Read full poem →</button>`:''}<div class="actions"><button onclick="let k='like_'+${i};let v=(+localStorage.getItem(k)||0)+1;localStorage.setItem(k,v);this.innerHTML='❤️ '+v">❤️ Like</button><button onclick="window.open('https://wa.me/?text='+encodeURIComponent('${p[0]} - PAULS POETRY https://paul-mcrae.github.io/pauls-poetry/'))">↗️ Share</button><button onclick="alert('Comment saved! ❤️')">💬 Comment</button></div></div>`});document.getElementById("poems").innerHTML+=h;function tick(){let n=new Date();let t=n.toLocaleTimeString('en-GB',{timeZone:'Africa/Kampala',hour12:false});let d=n.toLocaleDateString('en-GB',{timeZone:'Africa/Kampala',weekday:'long',day:'numeric',month:'long',year:'numeric'});document.getElementById("clock").innerText=t;document.getElementById("date").innerText=d;document.getElementById("sec").innerText=t.split(":")[2]+" sec";document.getElementById("ft").innerText=t+" EAT"}tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
